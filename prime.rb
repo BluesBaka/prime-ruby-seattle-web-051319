@@ -1,6 +1,7 @@
 def prime?(i)
-
-    (2..i-1).each do |number| return false if i % number === 0 || i <= 1
+    if i <= 1 return false
+      
+    (2..i-1).each do |number| return false if i % number === 0
     end
     true
 end
